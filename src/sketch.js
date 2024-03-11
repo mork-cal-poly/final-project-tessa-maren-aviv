@@ -2,7 +2,7 @@ let timer = 0;
 
 function setup() {
   // For ordering nodes in the DOM
-  let myCanvas = createCanvas(400, 400);
+  let myCanvas = createCanvas(600, 600);
   myCanvas.parent("canvas-parent");
 }
 
