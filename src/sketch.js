@@ -13,6 +13,10 @@ function draw() {
     text("Hi!", 200, 200);
   }
   timer++;
+
+  backpack();
+  toys();
+
 }
 
 

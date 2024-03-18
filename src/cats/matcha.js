@@ -1,4 +1,4 @@
-let clickedMatchaTea = false;
+//let clickedMatchaTea = false;
 
   
   //(matchaX, matchaY)

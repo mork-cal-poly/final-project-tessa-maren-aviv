@@ -5,6 +5,12 @@ var orangeFish = false;
 
 
 function preload() {
+  imgearlgrey = loadImage('../images/earlgrey_table.png');
+  imgearlgrey2 = loadImage('../images/earlgrey_chair.png');
+  imgthaitea = loadImage('../images/thaitea_table.png');
+  imgthaitea2 = loadImage('../images/thaitea_pillow.png');
+  imgmatcha = loadImage('../images/matcha_couch.png');
+  imgmatcha2 = loadImage('../images/matcha_table.png');
 
 }
 
