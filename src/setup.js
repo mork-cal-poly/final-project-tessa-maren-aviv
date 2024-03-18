@@ -1,4 +1,9 @@
-var backgroundImage = [];
+var londonRoom = false;
+var matchaRoom = false;
+var thaiRoom = false;
+var frontRoom = true;
+var menuRoom = true;
+
 var greenFruit = false;
 var greyRat = false;
 var orangeFish = false;
@@ -11,7 +16,9 @@ function preload() {
   imgthaitea2 = loadImage('../images/thaitea_pillow.png');
   imgmatcha = loadImage('../images/matcha_couch.png');
   imgmatcha2 = loadImage('../images/matcha_table.png');
-
+  imgOutside = loadImage('../images/outside');
+  imgCounter = loadImage('../images/front_counter');
+  imgFrontRoom = loadImage('../images/front_background');
 }
 
 function backpack() {
@@ -31,7 +38,6 @@ function toys() {
     goldfish(mouseX, mouseY, 0.8, 0);
   } else if (greyRat == true) {
     rat(mouseX, mouseY, 0.6, 0);
-
   }else if (greenFruit == true) {
     fruit(mouseX, mouseY, 0.5, 0);
   }
@@ -58,7 +64,6 @@ function goldfish(x, y, s, rot) {
     
     pop();
   }
-
 function fruit(x, y, s, rot) {
   noStroke();
   

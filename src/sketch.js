@@ -1,4 +1,3 @@
-let timer = 0;
 
 function setup() {
   // For ordering nodes in the DOM
@@ -9,10 +8,9 @@ function setup() {
 function draw() {
   background(220);
 
-  if (timer > 60 && timer < 100) {
+  if (menuRoom == true) {
     text("Hi!", 200, 200);
   }
-  timer++;
 
   greyRoom();
   backpack();
@@ -37,12 +35,23 @@ function mouseClicked() {
     }
   }
 
+  //room selection
+  if( mouseX > 350 && mouseX < 550) {
+    if (mouseY ) {
+
+    } else if (mouseY) {
+
+    }else if (mouseY) {
+
+    }
+  }
+
   //cat selection
-  if (greenFruit == true && red) {
+  if (greenFruit == true && matchaRoom == true) {
     clickedMatchaTea = !clickedMatchaTea; 
-  } else if (greyRat == true && blue) {
+  } else if (greyRat == true && londonRoom == true) {
     clickedLondonFog = !clickedLondonFog;
-  } else if (orangeFish == true && yellow) {
+  } else if (orangeFish == true && thaiRoom == true) {
     clickedThaiTea = !clickedThaiTea;
   } else {
 
