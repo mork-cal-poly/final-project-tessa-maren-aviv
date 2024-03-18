@@ -80,11 +80,13 @@ function mouseClicked() {
   }
 
   //cat selection
-  if (greenFruit == true && matchaRoom == true) {
+  if (greenFruit == true && matchaRoom == true && mouseX > 100 && mouseX < 410 && mouseY > 400 && mouseY < 600) {
     clickedMatchaTea = !clickedMatchaTea; 
-  } else if (greyRat == true && londonRoom == true) {
+  } else if (greyRat == true && londonRoom == true && mouseX > 300 && mouseX < 500 && mouseY > 300 && mouseY < 500) {
     clickedLondonFog = !clickedLondonFog;
-  } else if (orangeFish == true && thaiRoom == true) {
+
+  } else if (orangeFish == true && thaiRoom == true && mouseX > 250 && mouseX < 550 && mouseY < 500 && mouseY > 300) 
+  {
     clickedThaiTea = !clickedThaiTea;
   } else if (frontRoom == true && mouseX > 100 && mouseX < 200 && mouseY > 150 && mouseY < 490) {
     clickedBarista = !clickedBarista
