@@ -1,21 +1,16 @@
-let clicked = false;
-function setup() {
-  createCanvas(400, 400);
-}
+let clickedMatchaTea = false;
 
-function draw() {
-  background(220);
   
   //(matchaX, matchaY)
-  matchaTeaCat(200, 200);
-  matchaSleepClick(200, 200);
-}
+  //matchaTeaCat(200, 200);
+  //matchaSleepClick(200, 200);
+
 
 function matchaSleepClick(matchaX, matchaY) {
-  if (!clicked) {
+  if (!clickedMatchaTea) {
     matchaAwake(matchaX, matchaY);
   }
-  if (clicked){
+  if (clickedMatchaTea){
     matchaStretch(matchaX, matchaY);
   }
 }
@@ -150,6 +145,6 @@ pop();
 
 function mouseClicked() {
 
-clicked = !clicked; 
+clickedMatchaTea = !clickedMatchaTea; 
   
 }
