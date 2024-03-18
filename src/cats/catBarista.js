@@ -93,7 +93,7 @@ function catBaristaArmAnimation() {
     rect(10, -70, 20, 30, 0, 0, 10, 10);
     stroke(255);
     noFill();
-    ellipse(10, -60, 15, 10, 3*PI / 2, PI / 2);
+    ellipse(10, -60, 15, 10, 3 * PI / 2, PI / 2);
     //paw
     noStroke();
     fill('rgb(190,111,111)');

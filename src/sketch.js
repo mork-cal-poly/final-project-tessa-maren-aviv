@@ -74,10 +74,10 @@ function mouseClicked() {
     }
   } 
   
-  if (mouseX > 50 && mouseX > 100 && mouseY > 530 && mouseY < 580); {
-    thaiRoom = matchaRoom = londonRoom = catRoom = false;
-    frontRoom = true;
-  }
+  // if (mouseX > 50 && mouseX > 100 && mouseY > 530 && mouseY < 580); {
+  //   thaiRoom = matchaRoom = londonRoom = catRoom = false;
+  //   frontRoom = true;
+  // }
 
   //cat selection
   if (greenFruit == true && matchaRoom == true) {
