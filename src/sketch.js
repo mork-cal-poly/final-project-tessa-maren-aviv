@@ -14,6 +14,7 @@ function draw() {
   }
   timer++;
 
+  greyRoom();
   backpack();
   toys();
 }
@@ -23,10 +24,16 @@ function mouseClicked() {
   if (mouseY >= 500){
     if(mouseX > 300 && mouseX < 400) {
       orangeFish = !orangeFish;
+      greenFruit = false;
+      greyRat = false;
     }else if (mouseX > 400 && mouseX < 500) {
       greenFruit = !greenFruit;
+      orangeFish = false;
+      greyRat = false;
     }else if (mouseX > 500 && mouseX < 600) {
       greyRat = !greyRat;
+      greenFruit = false;
+      orangeFish = false;
     }
   }
 

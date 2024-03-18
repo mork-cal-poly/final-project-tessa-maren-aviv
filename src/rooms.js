@@ -65,15 +65,15 @@ ellipse(75 + width / 2, 100 + height / 2, 65);
 
 //table
 push();
-translate(175, 360);
-scale(0.2);
+translate(300, 360);
+scale(0.5);
 image(imgearlgrey, 0, 0);
 pop();
 
 //chair
 push();
 translate(50, 325);
-scale(0.17);
+scale(0.5);
 image(imgearlgrey2, 0, 0);
 pop();
 }
@@ -146,14 +146,14 @@ function greenRoom() {
 //couch
   push();
   translate(60, 295);
-  scale(0.17);
+  scale(0.5);
   image(imgmatcha, 0, 0);
   pop();
   
 //table
   push();
   translate(325, 380);
-  scale(0.14);
+  scale(0.5);
   image(imgmatcha2, 0, 0);
   pop();
 }
@@ -226,14 +226,14 @@ function orangeRoom() {
 //table
   push();
   translate(70, 360);
-  scale(0.2);
+  scale(0.5);
   image(imgthaitea, 0, 0);
   pop();
   
 //pillow
  push();
-  translate(350, 350);
-  scale(0.14);
+  translate(350, 300);
+  scale(0.45);
   image(imgthaitea2, 0, 0);
   pop();
 }
