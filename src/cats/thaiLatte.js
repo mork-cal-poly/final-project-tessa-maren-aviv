@@ -1,23 +1,18 @@
-let clicked = false;
+let clickedThaiTea = false;
 let catTailRotation = 0;
 let tailMoveDown = true;
 
 
-function setup() {
-  createCanvas(400, 400);
-}
 
-function draw() {
-  background(0);
   
   //(thaiX, thaiY);
-  thaiTeaCat(200, 200);
-  thaiTailAnimation();
-}
+ // thaiTeaCat(200, 200);
+  //thaiTailAnimation();
+
 
 function thaiTailAnimation() {
 
-if (clicked) {
+if (clickedThaiTea) {
   
   if (tailMoveDown) {
     catTailRotation = catTailRotation - 0.025;
@@ -112,6 +107,6 @@ push();
 
 function mouseClicked() {
 
-    clicked = !clicked;
+    clickedThaiTea = !clickedThaiTea;
   
 }
