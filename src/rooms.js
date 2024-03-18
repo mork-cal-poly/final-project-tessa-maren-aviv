@@ -181,6 +181,7 @@ function orangeRoom() {
   strokeWeight(1);
   rect(0, 0, width / 6, 3 * height /4);
   rect(5 * width / 6, 0, width / 6, 3 * height / 4);
+  pop();
   
 // shelf
   noStroke();
