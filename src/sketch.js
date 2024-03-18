@@ -16,7 +16,30 @@ function draw() {
 
   backpack();
   toys();
+}
 
+function mouseClicked() {
+  //hotbar selection
+  if (mouseY >= 500){
+    if(mouseX > 300 && mouseX < 400) {
+      orangeFish = !orangeFish;
+    }else if (mouseX > 400 && mouseX < 500) {
+      greenFruit = !greenFruit;
+    }else if (mouseX > 500 && mouseX < 600) {
+      greyRat = !greyRat;
+    }
+  }
+
+  //cat selection
+  if (greenFruit == true && red) {
+    clickedMatchaTea = !clickedMatchaTea; 
+  } else if (greyRat == true && blue) {
+    clickedLondonFog = !clickedLondonFog;
+  } else if (orangeFish == true && yellow) {
+    clickedThaiTea = !clickedThaiTea;
+  } else {
+
+  }
 }
 
 

@@ -1,4 +1,4 @@
-//let clickedMatchaTea = false;
+let clickedMatchaTea = false;
 
   
   //(matchaX, matchaY)
@@ -140,11 +140,5 @@ push();
   ellipse(-45, 10, 5, 10);
   
 pop();
-  
-}
-
-function mouseClickedMatcha() {
-
-clickedMatchaTea = !clickedMatchaTea; 
   
 }

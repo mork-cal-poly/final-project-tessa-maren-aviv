@@ -1,4 +1,5 @@
 function greyRoom() {
+  push();
 // wall and floor base
 fill(167, 204, 217); //floor
 rect(0, 0, 600, 600);
@@ -74,9 +75,11 @@ push();
 translate(50, 325);
 scale(0.17);
 image(imgearlgrey2, 0, 0);
+pop();
 }
 
 function greenRoom() {
+  push();
     // wall and floor base
   fill(214, 217, 139);
   rect(0, 0, 600, 600);
@@ -152,9 +155,11 @@ function greenRoom() {
   translate(325, 380);
   scale(0.14);
   image(imgmatcha2, 0, 0);
+  pop();
 }
 
 function orangeRoom() {
+  push();
     // wall and floor base
   fill(191, 123, 63); //floor
   rect(0, 0, 600, 600);
@@ -230,4 +235,5 @@ function orangeRoom() {
   translate(350, 350);
   scale(0.14);
   image(imgthaitea2, 0, 0);
+  pop();
 }
