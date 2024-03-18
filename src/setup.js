@@ -8,9 +8,6 @@ var greenFruit = false;
 var greyRat = false;
 var orangeFish = false;
 
-var catRoom = false;
-
-
 function preload() {
   imgearlgrey = loadImage('../images/earlgrey_table.png');
   imgearlgrey2 = loadImage('../images/earlgrey_chair.png');
