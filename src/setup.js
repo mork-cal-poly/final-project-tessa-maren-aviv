@@ -1,8 +1,8 @@
 var londonRoom = false;
 var matchaRoom = false;
 var thaiRoom = false;
-var frontRoom = true;
-var menuRoom = true;
+var frontRoom = false;
+var outside = true;
 
 var greenFruit = false;
 var greyRat = false;
@@ -19,6 +19,7 @@ function preload() {
   imgOutside = loadImage('../images/outside.png');
   imgCounter = loadImage('../images/front_counter.png');
   imgFrontRoom = loadImage('../images/front_background.png');
+  imgMenu = loadImage('../images/menu_catcafe.png');
 }
 
 function backpack() {

@@ -237,3 +237,26 @@ function orangeRoom() {
   image(imgthaitea2, 0, 0);
   pop();
 }
+
+function cafeRoom() {
+  push();
+    scale(0.25);
+  image(imgFrontRoom, 0, 0);
+  pop();
+
+  catBarista(200 - 50, 300 + 100);
+  //(baristaArmX, baristaArmY);
+  catBaristaArm(170 - 50, 220 + 100);
+  catBaristaArmAnimation();
+
+  push()
+    translate(315, 25)
+    scale(0.25);
+  image(imgMenu, 0, 0);
+  pop();
+
+  push();
+    scale(0.25);
+  image(imgCounter, 0, 0);
+  pop();
+}

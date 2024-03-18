@@ -8,8 +8,9 @@ function setup() {
 function draw() {
   background(220);
 
+  //draws rooms
   if (frontRoom == true) {
-    
+    cafeRoom();
   } else if (londonRoom == true) {
     greyRoom();
   } else if (thaiRoom == true) {
@@ -17,6 +18,7 @@ function draw() {
   } else if (matchaRoom == true) {
     greenRoom();
   } else {
+    outside = true;
     push()
       scale(0.25)
     image(imgOutside, 0, 0);
@@ -28,6 +30,7 @@ function draw() {
 }
 
 function mouseClicked() {
+  console.log("x: " + mouseX + " y: " + mouseY);
   //hotbar selection
   if (mouseY >= 500){
     if(mouseX > 300 && mouseX < 400) {
@@ -46,13 +49,19 @@ function mouseClicked() {
   }
 
   //room selection
-  if( mouseX > 350 && mouseX < 550) {
-    if (mouseY ) {
-
-    } else if (mouseY) {
-
-    }else if (mouseY) {
-
+  if(outside == true && mouseX > 75 && mouseX < 475 && mouseY > 175 && mouseY < 540) {
+    frontRoom = true;
+    outside = false;
+  } else {
+    if (mouseY > 198 && mouseY < 222) {
+      orangeRoom = true;
+      frontRoom = greyRoom = greenRoom = false;
+    } else if (mouseY > 236 && mouseY < 259) {
+      greenRoom = true;
+      frontRoom = greyRoom = orangeRoom = false;
+    }else if (mouseY > 271 && mouseY < 294) {
+      greyRoom = true;
+      frontRoom = orangeRoom = greenRoom = false;
     }
   }
 
@@ -63,9 +72,11 @@ function mouseClicked() {
     clickedLondonFog = !clickedLondonFog;
   } else if (orangeFish == true && thaiRoom == true) {
     clickedThaiTea = !clickedThaiTea;
-  } else {
+  } else if (frontRoom == true && mouseX > 100 && mouseX < 200 && mouseY > 150 && mouseY < 490) {
+    clickedBarista = !clickedBarista
+  }
 
   }
-}
+
 
 
