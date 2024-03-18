@@ -73,7 +73,7 @@ function mouseClicked() {
   } else if (greyRat == true && londonRoom == true && mouseX > 300 && mouseX < 500 && mouseY > 300 && mouseY < 500) {
     clickedLondonFog = !clickedLondonFog;
 
-  } else if (orangeFish == true && thaiRoom == true && mouseX > 250 && mouseX < 550 && mouseY < 500 && mouseY > 300) 
+  } else if (orangeFish == true && thaiRoom == true && mouseX > 250 && mouseX < 400 && mouseY < 400 && mouseY > 200) 
   {
     clickedThaiTea = !clickedThaiTea;
   } else if (frontRoom == true && mouseX > 100 && mouseX < 200 && mouseY > 150 && mouseY < 490) {
