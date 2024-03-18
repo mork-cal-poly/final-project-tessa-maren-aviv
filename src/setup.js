@@ -8,6 +8,8 @@ var greenFruit = false;
 var greyRat = false;
 var orangeFish = false;
 
+var catRoom = false;
+
 
 function preload() {
   imgearlgrey = loadImage('../images/earlgrey_table.png');
@@ -20,6 +22,7 @@ function preload() {
   imgCounter = loadImage('../images/front_counter.png');
   imgFrontRoom = loadImage('../images/front_background.png');
   imgMenu = loadImage('../images/menu_catcafe.png');
+  imgHome = loadImage('../images/homebutton.png');
 }
 
 function backpack() {

@@ -25,12 +25,21 @@ function draw() {
     pop();
   }
 
+  //home button
+  if (catRoom == true) {
+    push()
+    translate(35, 510)
+      scale(0.25)
+    image(imgHome, 0, 0);
+  pop();
+  }
+
   backpack();
   toys();
 }
 
 function mouseClicked() {
-  console.log("x: " + mouseX + " y: " + mouseY);
+  console.log();
   //hotbar selection
   if (mouseY >= 500){
     if(mouseX > 300 && mouseX < 400) {
@@ -50,19 +59,24 @@ function mouseClicked() {
 
   //room selection
   if(outside == true && mouseX > 75 && mouseX < 475 && mouseY > 175 && mouseY < 540) {
-    frontRoom = true;
+    frontRoom = catRoom = true;
     outside = false;
-  } else {
+  } else if (frontRoom == true){
     if (mouseY > 198 && mouseY < 222) {
-      orangeRoom = true;
-      frontRoom = greyRoom = greenRoom = false;
+      thaiRoom = catRoom = true;
+      frontRoom = londonRoom = matchaRoom = false;
     } else if (mouseY > 236 && mouseY < 259) {
-      greenRoom = true;
-      frontRoom = greyRoom = orangeRoom = false;
+      matchaRoom =  catRoom = true;
+      frontRoom = londonRoom = thaiRoom = false;
     }else if (mouseY > 271 && mouseY < 294) {
-      greyRoom = true;
-      frontRoom = orangeRoom = greenRoom = false;
+      londonRoom =  catRoom = true;
+      frontRoom = thaiRoom = matchaRoom = false;
     }
+  } 
+  
+  if (catRoom == true && mouseX > 50 && mouseX > 100 && mouseY > 530 && mouseY < 580); {
+    frontRoom = true;
+    thaiRoom = matchaRoom = londonRoom = catRoom = false;
   }
 
   //cat selection
