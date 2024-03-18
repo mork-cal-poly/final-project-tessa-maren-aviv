@@ -1,25 +1,21 @@
-let clicked = false;
-function setup() {
-  createCanvas(400, 400);
-}
+let clickedLondonFog = false;
 
-function draw() {
-  background(220);
+
+
   
   // (fogX, fogY)
-  londonFogCat(200, 200);
-
-  catEyes();
+  //londonFogCat(200, 200);
+  //catEyes();
  
-}
+
 
 function catEyes() {
   
-  if (!clicked) { 
+  if (!clickedLondonFog) { 
     closedEyes();
   }
   
-  if (clicked) {
+  if (clickedLondonFog) {
     openEyes();
   }
   
@@ -108,7 +104,6 @@ pop();
 }
 
 
-
 function closedEyes() {
   
 push();
@@ -141,7 +136,7 @@ pop();
 
 function mouseClicked() {
   
-  clicked = !clicked;
+  clickedLondonFog = !clickedLondonFog;
 }
 
 
