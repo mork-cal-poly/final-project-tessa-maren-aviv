@@ -76,6 +76,10 @@ translate(50, 325);
 scale(0.5);
 image(imgearlgrey2, 0, 0);
 pop();
+
+//london fog cat functions
+londonFogCat(410,420);
+catEyes();
 }
 
 function greenRoom() {
@@ -156,6 +160,11 @@ function greenRoom() {
   scale(0.5);
   image(imgmatcha2, 0, 0);
   pop();
+
+//matcha cat functions
+matchaTeaCat(200, 500);
+matchaSleepClick(200,500);
+
 }
 
 function orangeRoom() {
@@ -236,6 +245,11 @@ function orangeRoom() {
   scale(0.45);
   image(imgthaitea2, 0, 0);
   pop();
+
+//thai tea cat function
+thaiTeaCat(310, 300);
+thaiTailAnimation();
+
 }
 
 function cafeRoom() {

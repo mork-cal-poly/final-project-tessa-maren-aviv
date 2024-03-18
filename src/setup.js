@@ -1,6 +1,6 @@
 var londonRoom = false;
 var matchaRoom = false;
-var thaiRoom = false;
+var thaiRoom = true;
 var frontRoom = false;
 var outside = true;
 

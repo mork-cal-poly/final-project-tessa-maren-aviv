@@ -12,11 +12,11 @@ var clickedLondonFog = false;
 function catEyes() {
   
   if (!clickedLondonFog) { 
-    closedEyes();
+    closedEyes(410, 420);
   }
   
   if (clickedLondonFog) {
-    openEyes();
+    openEyes(410, 420);
   }
   
 }
@@ -85,10 +85,10 @@ pop();
   
 }
 
-function openEyes() {
+function openEyes(fogX, fogY) {
     
 push();
-  translate(200, 200);
+  translate(fogX, fogY);
   fill(0);
   ellipse(0, 0, 10, 10);
   ellipse(-30, 0, 10, 10);
@@ -104,11 +104,11 @@ pop();
 }
 
 
-function closedEyes() {
+function closedEyes(fogX, fogY) {
   
 push();
 
-  translate(200, 200);
+  translate(fogX, fogY);
   
 //eyes
   stroke(0);
