@@ -25,18 +25,10 @@ function draw() {
     pop();
   }
 
-  //home button
-  if (catRoom == true) {
-    push()
-    translate(35, 510)
-      scale(0.25)
-    image(imgHome, 0, 0);
-  pop();
-  }
-
   backpack();
   toys();
 }
+
 
 function mouseClicked() {
   console.log();
