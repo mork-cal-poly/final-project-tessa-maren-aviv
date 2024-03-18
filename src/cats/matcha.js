@@ -143,7 +143,7 @@ pop();
   
 }
 
-function mouseClicked() {
+function mouseClickedMatcha() {
 
 clickedMatchaTea = !clickedMatchaTea; 
   

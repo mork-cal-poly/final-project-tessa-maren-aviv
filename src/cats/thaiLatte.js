@@ -105,7 +105,7 @@ push();
 
  
 
-function mouseClicked() {
+function mouseClickedThaiTea() {
 
     clickedThaiTea = !clickedThaiTea;
   

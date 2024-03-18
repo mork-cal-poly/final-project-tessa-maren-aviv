@@ -134,7 +134,7 @@ pop();
   
 }
 
-function mouseClicked() {
+function mouseClickedLondonFog() {
   
   clickedLondonFog = !clickedLondonFog;
 }
