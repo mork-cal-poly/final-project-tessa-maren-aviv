@@ -1,5 +1,5 @@
 var backgroundImage = [];
-var grenFruit = true;
+var greenFruit = false;
 var greyRat = false;
 var orangeFish = false;
 
@@ -22,8 +22,9 @@ function backpack() {
 
 function toys() {
   if (orangeFish == true) {
-    
+    goldfish(mouseX, mouseY, 0.8, 0);
   } else if (greyRat == true) {
+    rat(mouseX, mouseY, 0.6, 0);
 
   }else if (greenFruit == true) {
     fruit(mouseX, mouseY, 0.5, 0);
