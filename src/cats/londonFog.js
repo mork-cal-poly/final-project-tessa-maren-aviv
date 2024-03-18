@@ -1,4 +1,4 @@
-let clickedLondonFog = false;
+var clickedLondonFog = false;
 
 
 
@@ -132,11 +132,6 @@ push();
   
 pop();
   
-}
-
-function mouseClickedLondonFog() {
-  
-  clickedLondonFog = !clickedLondonFog;
 }
 
 

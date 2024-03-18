@@ -8,11 +8,21 @@ function setup() {
 function draw() {
   background(220);
 
-  if (menuRoom == true) {
-    text("Hi!", 200, 200);
+  if (frontRoom == true) {
+    
+  } else if (londonRoom == true) {
+    greyRoom();
+  } else if (thaiRoom == true) {
+    orangeRoom();
+  } else if (matchaRoom == true) {
+    greenRoom();
+  } else {
+    push()
+      scale(0.25)
+    image(imgOutside, 0, 0);
+    pop();
   }
 
-  greyRoom();
   backpack();
   toys();
 }

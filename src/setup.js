@@ -16,9 +16,9 @@ function preload() {
   imgthaitea2 = loadImage('../images/thaitea_pillow.png');
   imgmatcha = loadImage('../images/matcha_couch.png');
   imgmatcha2 = loadImage('../images/matcha_table.png');
-  imgOutside = loadImage('../images/outside');
-  imgCounter = loadImage('../images/front_counter');
-  imgFrontRoom = loadImage('../images/front_background');
+  imgOutside = loadImage('../images/outside.png');
+  imgCounter = loadImage('../images/front_counter.png');
+  imgFrontRoom = loadImage('../images/front_background.png');
 }
 
 function backpack() {
