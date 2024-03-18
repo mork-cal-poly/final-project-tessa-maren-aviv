@@ -31,7 +31,7 @@ function draw() {
     translate(35, 510)
       scale(0.25)
     image(imgHome, 0, 0);
-  pop();
+    pop();
   }
 
   backpack();
@@ -39,7 +39,7 @@ function draw() {
 }
 
 function mouseClicked() {
-  console.log();
+  console.log("x: " + mouseX + " y: " + mouseY + " frontroom: " + frontRoom);
   //hotbar selection
   if (mouseY >= 500){
     if(mouseX > 300 && mouseX < 400) {
@@ -59,24 +59,24 @@ function mouseClicked() {
 
   //room selection
   if(outside == true && mouseX > 75 && mouseX < 475 && mouseY > 175 && mouseY < 540) {
-    frontRoom = catRoom = true;
+    frontRoom = true;
     outside = false;
   } else if (frontRoom == true){
     if (mouseY > 198 && mouseY < 222) {
-      thaiRoom = catRoom = true;
+      thaiRoom = true;
       frontRoom = londonRoom = matchaRoom = false;
     } else if (mouseY > 236 && mouseY < 259) {
-      matchaRoom =  catRoom = true;
+      matchaRoom = true;
       frontRoom = londonRoom = thaiRoom = false;
     }else if (mouseY > 271 && mouseY < 294) {
-      londonRoom =  catRoom = true;
+      londonRoom = true;
       frontRoom = thaiRoom = matchaRoom = false;
     }
   } 
   
-  if (catRoom == true && mouseX > 50 && mouseX > 100 && mouseY > 530 && mouseY < 580); {
-    frontRoom = true;
+  if (mouseX > 50 && mouseX > 100 && mouseY > 530 && mouseY < 580); {
     thaiRoom = matchaRoom = londonRoom = catRoom = false;
+    frontRoom = true;
   }
 
   //cat selection
