@@ -1,4 +1,4 @@
-let clickedMatchaTea = false;
+var clickedMatchaTea = false;
 
   
   //(matchaX, matchaY)

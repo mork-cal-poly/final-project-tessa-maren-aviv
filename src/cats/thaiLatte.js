@@ -1,6 +1,6 @@
-let clickedThaiTea = false;
-let catTailRotation = 0;
-let tailMoveDown = true;
+var clickedThaiTea = false;
+var catTailRotation = 0;
+var tailMoveDown = true;
 
 
 
@@ -101,12 +101,4 @@ push();
   line(30, -50, 37, -45);
   line(32, -53, 38, -50);
 
-}
-
- 
-
-function mouseClickedThaiTea() {
-
-    clickedThaiTea = !clickedThaiTea;
-  
 }
